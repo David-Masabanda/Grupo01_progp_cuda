@@ -1,0 +1,16 @@
+# ninja log v5
+2653	4417	7299174790392361	CMakeFiles/Grupal01_pp.dir/cmake_device_link.obj	3051e070105f020e
+1	431	7299174750608221	CMakeFiles/Grupal01_pp.dir/ejemplo1.cpp.obj	16d4516a18c090a0
+2	1106	7300970834280776	build.ninja	a7982c7e08e1ff4d
+1712	1897	7299159839896136	Grupal01_pp.exe	85dc17cd13a1e6ee
+5	2652	7299174772723554	CMakeFiles/Grupal01_pp.dir/kernel.cu.obj	c26d780771ad088e
+12	1821	7300970834280776	build.ninja	a7982c7e08e1ff4d
+0	4144	7300970876289975	CMakeFiles/Grupal01_pp.dir/histograma.cu.obj	f1c37a2b48a1234c
+4144	5900	7300970893921355	CMakeFiles/Grupal01_pp.dir/cmake_device_link.obj	a230463809638c90
+5900	6098	7300970895731087	Grupal01_pp.exe	22009e2bdc87daff
+1	3762	7300972147647331	CMakeFiles/Grupal01_pp.dir/histograma.cu.obj	f1c37a2b48a1234c
+3762	5371	7300972163855886	CMakeFiles/Grupal01_pp.dir/cmake_device_link.obj	a230463809638c90
+5371	5574	7300972165702635	Grupal01_pp.exe	22009e2bdc87daff
+1	3600	7300972774955714	CMakeFiles/Grupal01_pp.dir/histograma.cu.obj	f1c37a2b48a1234c
+3600	5260	7300972791659050	CMakeFiles/Grupal01_pp.dir/cmake_device_link.obj	a230463809638c90
+5260	5450	7300972793389319	Grupal01_pp.exe	22009e2bdc87daff

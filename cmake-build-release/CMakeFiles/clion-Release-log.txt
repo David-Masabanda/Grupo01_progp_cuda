@@ -1,0 +1,112 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\josue\CLionProjects\Grupal01_pp -B C:\Users\josue\CLionProjects\Grupal01_pp\cmake-build-release
+-- The CUDA compiler identification is NVIDIA 12.3.107
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/bin/nvcc.exe - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- The CXX compiler identification is MSVC 19.38.33135.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\josue\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=MSVC
+-- CMake-Conan: CMake compiler version=19.38.33135.0
+-- CMake-Conan: CMake compiler.runtime=dynamic
+-- CMake-Conan: [settings] compiler=msvc
+-- CMake-Conan: [settings] compiler.version=193
+-- CMake-Conan: [settings] compiler.runtime=dynamic
+CMake Warning at conan_provider.cmake:299 (message):
+  CMake-Conan: The C compiler is not defined.  Please define CMAKE_C_COMPILER
+  or enable the C language.
+Call Stack (most recent call first):
+  conan_provider.cmake:378 (append_compiler_executables_configuration)
+  conan_provider.cmake:525 (detect_host_profile)
+  CMakeLists.txt:8 (find_package)
+
+
+-- CMake-Conan: Creating profile C:/Users/josue/CLionProjects/Grupal01_pp/cmake-build-release/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=msvc
+compiler.version=193
+compiler.runtime=dynamic
+build_type=Release
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"cpp":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe"}
+
+-- CMake-Conan: Installing single configuration Release
+-- CMake-Conan: conan install C:/Users/josue/CLionProjects/Grupal01_pp -of=C:/Users/josue/CLionProjects/Grupal01_pp/cmake-build-release/conan --profile:host=default;--profile:host=C:/Users/josue/CLionProjects/Grupal01_pp/cmake-build-release/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=msvc
+compiler.cppstd=14
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+compiler.version=193
+os=Windows
+[conf]
+tools.build:compiler_executables={'cpp': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=msvc
+compiler.cppstd=14
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+compiler.version=193
+os=Windows
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: C:/Users/josue/CLionProjects/Grupal01_pp\conanfile.py
+Requirements
+    fmt/10.2.1#9199a7a0611866dea5c8849a77467b25 - Cache
+
+======== Computing necessary packages ========
+Requirements
+    fmt/10.2.1#9199a7a0611866dea5c8849a77467b25:bed280a9c51d41820ca64294cf373083ad852aa8#fefff18511eea6864c0f2fe660d02779 - Cache
+
+======== Installing packages ========
+fmt/10.2.1: Already installed! (1 of 1)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: fmt/10.2.1
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\josue\CLionProjects\Grupal01_pp\cmake-build-release\conan\build\Release\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(fmt)
+    target_link_libraries(... fmt::fmt)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\josue\CLionProjects\Grupal01_pp\cmake-build-release\conan\build\Release\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: Preset 'conan-release' added to CMakePresets.json. Invoke it manually using 'cmake --preset conan-release' if using CMake>=3.23
+conanfile.py: If your CMake version is not compatible with CMakePresets (<3.23) call cmake like: 'cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=C:\Users\josue\CLionProjects\Grupal01_pp\cmake-build-release\conan\build\Release\generators\conan_toolchain.cmake -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release'
+conanfile.py: CMakeToolchain generated: CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:/Users/josue/CLionProjects/Grupal01_pp/cmake-build-release/conan/build/Release/generators
+-- CMake-Conan: CONANFILE=C:/Users/josue/CLionProjects/Grupal01_pp/conanfile.py
+-- Conan: Component target declared 'fmt::fmt'
+-- Configuring done (30.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/josue/CLionProjects/Grupal01_pp/cmake-build-release
