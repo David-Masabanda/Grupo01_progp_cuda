@@ -8,7 +8,7 @@ enable_language(CXX CUDA)
 find_package(fmt)
 
 add_executable(Grupal01_pp
-        histograma.cu
+        Ejercicio1.cu
 )
 
 target_include_directories(Grupal01_pp
